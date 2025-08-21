@@ -23,7 +23,7 @@ const Home = () => {
     {
       id: 3,
       title: 'Limpeza de Computador',
-      price: 'R$ 100',
+      price: 'A partir de R$ 100',
       image: 'https://cmtecnologias.com/wp-content/uploads/2024/04/Banner-blog-16-1.png',
       description: 'Limpeza interna e externa completa do equipamento'
     },

@@ -74,7 +74,7 @@ const Services = () => {
       icon: <FaCog />,
       image: 'https://pplware.sapo.pt/wp-content/uploads/2022/07/escrever_computador00.jpg',
       description: 'Instalação e configuração do Microsoft Office',
-      features: ['Análise de sistema', Office Original', 'Configuração Completa', 'Suporte Técnico']
+      features: ['Análise de sistema', 'Office Original', 'Configuração Completa', 'Suporte Técnico']
     }
   ];
 

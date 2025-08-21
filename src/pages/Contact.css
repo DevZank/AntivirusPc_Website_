@@ -275,6 +275,13 @@
   font-weight: 600;
 }
 
+.location-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .location-info h3 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -282,7 +289,7 @@
   margin-bottom: 20px;
 }
 
-.location-info > p {
+.location-info p {
   color: #6b7280;
   line-height: 1.6;
   margin-bottom: 30px;

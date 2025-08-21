@@ -29,7 +29,7 @@ const Services = () => {
     {
       id: 3,
       title: 'Limpeza de Computador',
-      price: 'R$ 100',
+      price: 'A partir de R$ 100',
       category: 'manutencao',
       icon: <FaCog />,
       image: 'https://cmtecnologias.com/wp-content/uploads/2024/04/Banner-blog-16-1.png',
@@ -64,7 +64,7 @@ const Services = () => {
       icon: <FaShieldAlt />,
       image: 'https://informasom.com.br/wp-content/uploads/2022/04/05-servicos-instalacao-de-dispositivos-e-programas.jpg',
       description: 'Instalação de programas e softwares especializados',
-      features: ['Configuração Personalizada', 'Suporte Pós-Instalação']
+      features: ['Configuração Personalizada']
     },
     {
       id: 7,
@@ -74,7 +74,7 @@ const Services = () => {
       icon: <FaCog />,
       image: 'https://pplware.sapo.pt/wp-content/uploads/2022/07/escrever_computador00.jpg',
       description: 'Instalação e configuração do Microsoft Office',
-      features: ['Análise de sistema', 'Office Original', 'Configuração Completa', 'Suporte Técnico']
+      features: ['Análise de sistema', 'Instalação de Programas', 'Configuração Completa', 'Suporte Técnico']
     }
   ];
 

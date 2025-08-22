@@ -16,7 +16,7 @@ const Home = () => {
     {
       id: 2,
       title: 'Montagem completa PC Gamer com ou sem instalação de Sistema Operacional',
-      price: 'A partir de R$ 250',
+      price: 'Com seu SDD R$ 250 | Com nosso SSD R$ 500',
       image: 'https://st2.depositphotos.com/1033604/7462/i/450/depositphotos_74620805-stock-photo-assembling-computer-parts-closeup.jpg',
       description: 'Montagem profissional de PC gamer e corporativo'
     },
@@ -25,7 +25,7 @@ const Home = () => {
       title: 'Limpeza de Computador',
       price: 'A partir de R$ 100',
       image: 'https://cmtecnologias.com/wp-content/uploads/2024/04/Banner-blog-16-1.png',
-      description: 'Limpeza interna e externa completa do equipamento'
+      description: 'Limpeza interna e externa completa do equipamento, e troca de pasta térmica'
     },
     {
       id: 4,

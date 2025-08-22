@@ -39,7 +39,7 @@ const Services = () => {
     {
       id: 4,
       title: 'Instalação de SSD com Clonagem de Sistema Operacional completo',
-      price: 'Com seu SDD R$ 250 | Com nosso SSD R$ 500',
+      price: 'Seu SDD R$ 250 | Nosso SSD R$ 500',
       category: 'hardware',
       icon: <FaHdd />,
       image: 'https://conteudo.imguol.com.br/c/noticias/db/2021/11/08/unidade-de-armazenamento-ssd-em-um-notebook-1636401432430_v2_615x300.jpg',

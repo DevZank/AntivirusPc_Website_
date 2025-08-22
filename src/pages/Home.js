@@ -16,7 +16,7 @@ const Home = () => {
     {
       id: 2,
       title: 'Montagem completa PC Gamer com ou sem instalação de Sistema Operacional',
-      price: 'Com seu SDD R$ 250 | Com nosso SSD R$ 500',
+      price: 'Seu SDD R$ 250 | Nosso SSD R$ 500',
       image: 'https://st2.depositphotos.com/1033604/7462/i/450/depositphotos_74620805-stock-photo-assembling-computer-parts-closeup.jpg',
       description: 'Montagem profissional de PC gamer e corporativo'
     },

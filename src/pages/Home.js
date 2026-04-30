@@ -91,8 +91,7 @@ const Home = () => {
             </div>
             <h1 className="hero-title">ANTIVIRUS PC</h1>
             <p className="hero-subtitle">
-              Montagem e instalação de programas para PCs e notebooks. 
-              <br />Rápido e confiável!
+              Acesso Remoto Instalação de Software , Montagem de Micro Completo Gamer ou Home Office & Upgrade em PC's ou Notebook's
             </p>
             <div className="hero-buttons">
               <Link to="/servicos" className="btn btn-primary">Ver Serviços</Link>

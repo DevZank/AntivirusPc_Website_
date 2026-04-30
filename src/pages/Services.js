@@ -62,7 +62,7 @@ const Services = () => {
       price: 'A partir de R$ 100',
       category: 'software',
       icon: <FaShieldAlt />,
-      image: 'https://informasom.com.br/wp-content/uploads/2022/04/05-servicos-instalacao-de-dispositivos-e-programas.jpg',
+      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&q=80',
       description: 'Instalação de programas e softwares especializados',
       features: ['Configuração Personalizada']
     },

@@ -1,7 +1,7 @@
 {
   "name": "antpc-website",
   "version": "1.0.0",
-  "description": "ANTPC - Assistência Técnica Profissional",
+  "description": "ANTPC - Soluções em Informática",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

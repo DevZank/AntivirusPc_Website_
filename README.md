@@ -1,6 +1,6 @@
 # ANTPC - Website Profissional
 
-Site profissional para a ANTPC - Assistência Técnica em Computadores e Notebooks.
+Site profissional para a ANTPC - Soluções em Computadores e Notebooks.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -97,4 +97,4 @@ src/
 
 ---
 
-**Desenvolvido para ANTPC - Assistência Técnica Profissional**
+**Desenvolvido para ANTPC - Soluções em Informática**

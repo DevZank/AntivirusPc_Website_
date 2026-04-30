@@ -91,7 +91,7 @@ const Home = () => {
             </div>
             <h1 className="hero-title">ANTIVIRUS PC</h1>
             <p className="hero-subtitle">
-              Manutenção, montagem e instalação de programas para PCs e notebooks. 
+              Montagem e instalação de programas para PCs e notebooks. 
               <br />Rápido e confiável!
             </p>
             <div className="hero-buttons">

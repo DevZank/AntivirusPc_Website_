@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/Logo1.png';
-import { FaTools, FaLaptop, FaDesktop, FaShieldAlt, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import './Home.css';
 
 const Home = () => {
@@ -36,6 +35,7 @@ const Home = () => {
     }
   ];
 
+  // eslint-disable-next-line no-unused-vars
   const popularProducts = [
     {
       id: 1,

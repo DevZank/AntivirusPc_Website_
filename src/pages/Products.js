@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaDesktop, FaMemory, FaHdd, FaMicrochip, FaKeyboard, FaMouse, FaHeadphones, FaGamepad } from 'react-icons/fa';
+import { FaDesktop, FaMemory, FaHdd, FaMicrochip, FaKeyboard, FaHeadphones, FaGamepad } from 'react-icons/fa';
 import './Products.css';
 
 const Products = () => {

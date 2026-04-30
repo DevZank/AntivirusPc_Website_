@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaDesktop, FaLaptop, FaTools, FaShieldAlt, FaCog, FaHdd, FaMemory, FaWifi } from 'react-icons/fa';
+import { FaDesktop, FaTools, FaShieldAlt, FaCog, FaHdd, FaMemory, FaWifi } from 'react-icons/fa';
 import './Services.css';
 
 const Services = () => {

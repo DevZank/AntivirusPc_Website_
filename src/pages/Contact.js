@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaWhatsapp, FaUser, FaComment } from 'react-icons/fa';
+import { FaPhone, FaMapMarkerAlt, FaClock, FaWhatsapp, FaUser, FaComment } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -190,7 +190,7 @@ const Contact = () => {
                 <div className="map-content">
                   <FaMapMarkerAlt />
                   <p>Mapa Interativo</p>
-                  <a href="https://www.google.com/maps/place/Rua+Andorinha+Pequena+124,+Jardim+Dom+Jos%C3%A9,+S%C3%A3o+Paulo+SP" target="_blank">Clique para ver no Google Maps</a>
+                  <a href="https://www.google.com/maps/place/Rua+Andorinha+Pequena+124,+Jardim+Dom+Jos%C3%A9,+S%C3%A3o+Paulo+SP" target="_blank" rel="noreferrer">Clique para ver no Google Maps</a>
                 </div>
               </div>
             </div>

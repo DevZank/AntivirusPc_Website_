@@ -15,21 +15,21 @@ const Home = () => {
     {
       id: 2,
       title: 'Montagem completa PC Gamer com ou sem instalação de Sistema Operacional',
-      price: 'Seu SDD R$ 250 | Nosso SSD R$ 500',
+      price: 'Sem Sistema R$ 300+ | Com sistema R$ 500+',
       image: 'https://st2.depositphotos.com/1033604/7462/i/450/depositphotos_74620805-stock-photo-assembling-computer-parts-closeup.jpg',
       description: 'Montagem profissional de PC gamer e corporativo'
     },
     {
       id: 3,
       title: 'Limpeza de Computador',
-      price: 'A partir de R$ 100',
+      price: 'R$ 150',
       image: 'https://cmtecnologias.com/wp-content/uploads/2024/04/Banner-blog-16-1.png',
       description: 'Limpeza interna e externa completa do equipamento, e troca de pasta térmica'
     },
     {
       id: 4,
       title: 'Instalação SSD com Clonagem de Sistema Operacional completo',
-      price: 'A partir de R$ 250',
+      price: '(Seu SSD) R$ 250+ | (Nosso SSD) R$ 600+',
       image: 'https://conteudo.imguol.com.br/c/noticias/db/2021/11/08/unidade-de-armazenamento-ssd-em-um-notebook-1636401432430_v2_615x300.jpg',
       description: 'Instalação e configuração de novos discos rígidos ou SSDs'
     }
@@ -111,7 +111,7 @@ const Home = () => {
                 <div className="service-image">
                   <img src={service.image} alt={service.title} />
                   <div className="service-overlay">
-                    <span className="service-price">{service.price}</span>
+                    <span className="service-price-home">{service.price}</span>
                   </div>
                 </div>
                 <div className="service-content">
@@ -128,45 +128,11 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Popular Products */}
-      {/* <section className="popular-products">
-        <div className="container">
-          <h2 className="section-title">PRODUTOS POPULARES</h2>
-          <div className="products-grid">
-            {popularProducts.map(product => (
-              <div key={product.id} className="product-card">
-                <div className="product-badge">
-                  <span className="discount">-{product.discount}</span>
-                </div>
-                <div className="product-image">
-                  <img src={product.image} alt={product.name} />
-                </div>
-                <div className="product-content">
-                  <h3>{product.name}</h3>
-                  <div className="product-prices">
-                    <span className="original-price">{product.originalPrice}</span>
-                    <span className="current-price">{product.price}</span>
-                  </div>
-                  <button className="btn btn-primary">Comprar</button>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="products-cta">
-            <Link to="/produtos" className="btn btn-secondary">Ver Todos os Produtos</Link>
-          </div>
-        </div>
-      </section> */}
-
       {/* Location Section */}
       <section className="location-section">
         <div className="container">
           <h2 className="section-title">LOCALIZAÇÃO</h2>
           <div className="location-content">
-            {/* <div className="location-images">
-              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop" alt="Fachada da loja ANTPC" />
-              <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop" alt="Interior da loja ANTPC" />
-            </div> */}
             <div className="location-info">
               <h3>Rua Andorinha Pequena 124, Jd Dom José, São Paulo SP</h3>
               <Link to="/contato" className="btn btn-primary">Como Chegar</Link>

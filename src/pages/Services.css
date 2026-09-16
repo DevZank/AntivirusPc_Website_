@@ -107,7 +107,9 @@
 .service-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
   padding: 20px 25px 0;
 }
 
@@ -126,10 +128,20 @@
 .service-price {
   background: #fef2f2;
   color: #dc2626;
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: 20px;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.service-price .price-line {
+  white-space: nowrap;
 }
 
 /* Service Image */
@@ -281,7 +293,7 @@
   }
 
   .service-price {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 6px 12px;
   }
 
@@ -330,10 +342,10 @@
   .service-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
+    gap: 10px;
   }
 
   .service-price {
-    align-self: flex-end;
+    font-size: 0.78rem;
   }
 }

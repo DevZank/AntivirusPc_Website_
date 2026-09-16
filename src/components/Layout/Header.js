@@ -26,6 +26,38 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const navLinks = (
+    <ul className="nav-list">
+      <li>
+        <Link
+          to="/"
+          className={location.pathname === '/' ? 'active' : ''}
+          onClick={closeMenu}
+        >
+          HOME
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/servicos"
+          className={location.pathname === '/servicos' ? 'active' : ''}
+          onClick={closeMenu}
+        >
+          SERVIÇOS
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/contato"
+          className={location.pathname === '/contato' ? 'active' : ''}
+          onClick={closeMenu}
+        >
+          FALE CONOSCO
+        </Link>
+      </li>
+    </ul>
+  );
+
   return (
     <>
       {/* Main Header */}
@@ -40,55 +72,23 @@ const Header = () => {
               </div>
             </Link>
 
-            {/* Navigation */}
-            <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-              <ul className="nav-list">
-                <li>
-                  <Link 
-                    to="/" 
-                    className={location.pathname === '/' ? 'active' : ''}
-                    onClick={closeMenu}
-                  >
-                    HOME
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/servicos" 
-                    className={location.pathname === '/servicos' ? 'active' : ''}
-                    onClick={closeMenu}
-                  >
-                    SERVIÇOS
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/contato" 
-                    className={location.pathname === '/contato' ? 'active' : ''}
-                    onClick={closeMenu}
-                  >
-                    FALE CONOSCO
-                  </Link>
-                </li>
-                {/* <li>
-                  <Link 
-                    to="/produtos" 
-                    className={location.pathname === '/produtos' ? 'active' : ''}
-                    onClick={closeMenu}
-                  >
-                    PRODUTOS
-                  </Link>
-                </li> */}
-              </ul>
+            {/* Desktop Navigation - inside header */}
+            <nav className="nav nav-desktop">
+              {navLinks}
             </nav>
 
             {/* Mobile Menu Toggle */}
-            <button className="menu-toggle" onClick={toggleMenu}>
+            <button className="menu-toggle" onClick={toggleMenu} aria-label="Abrir menu">
               {isMenuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
         </div>
       </header>
+
+      {/* Mobile Navigation - OUTSIDE header to avoid stacking context issues */}
+      <nav className={`nav-mobile ${isMenuOpen ? 'nav-mobile-open' : ''}`} aria-hidden={!isMenuOpen}>
+        {navLinks}
+      </nav>
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && <div className="menu-overlay" onClick={closeMenu}></div>}

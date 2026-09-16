@@ -5,8 +5,6 @@ import './Contact.css';
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
-    phone: '',
     message: ''
   });
 
@@ -22,12 +20,7 @@ const Contact = () => {
     e.preventDefault();
     const phoneNumber = '5511951206367';
     const message = `Olá! Meu nome é ${formData.name}.
-    
-    Email: ${formData.email}
-    Telefone: ${formData.phone}
-
-    Mensagem: ${formData.message}`;
-    
+    ${formData.message}`;
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -122,22 +115,6 @@ const Contact = () => {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="phone">
-                    <FaPhone />
-                    Telefone
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    required
-                    placeholder="Digite seu telefone"
-                  />
-                </div>
-
-                <div className="form-group">
                   <label htmlFor="message">
                     <FaComment />
                     Mensagem
@@ -168,24 +145,8 @@ const Contact = () => {
           <h2 className="section-title">ONDE NOS ENCONTRAR</h2>
           
           <div className="location-content">
-            {/* <div className="location-images">
-              <div className="location-image">
-                <img src="/api/placeholder/400/300" alt="Fachada da ANTPC" />
-                <div className="image-overlay">
-                  <h3>Nossa Loja</h3>
-                </div>
-              </div>
-              <div className="location-image">
-                <img src="/api/placeholder/400/300" alt="Interior da ANTPC" />
-                <div className="image-overlay">
-                  <h3>Ambiente Profissional</h3>
-                </div>
-              </div>
-            </div> */}
-
             <div className="location-info">
               <h3>Rua Andorinha Pequena 124, Jardim Dom José, São Paulo SP</h3>
-
               <div className="map-placeholder">
                 <div className="map-content">
                   <FaMapMarkerAlt />

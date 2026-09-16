@@ -19,7 +19,7 @@ const Services = () => {
     {
       id: 2,
       title: 'Montagem completa de PC Gamer com ou sem instalação de Sistema Operacional',
-      price: 'A partir de R$ 250',
+      price: 'Sem Sistema R$ 300+ | Com sistema R$ 500+',
       category: 'hardware',
       icon: <FaTools />,
       image: 'https://st2.depositphotos.com/1033604/7462/i/450/depositphotos_74620805-stock-photo-assembling-computer-parts-closeup.jpg',
@@ -29,7 +29,7 @@ const Services = () => {
     {
       id: 3,
       title: 'Limpeza de Computador',
-      price: 'A partir de R$ 100',
+      price: 'R$ 150',
       category: 'manutencao',
       icon: <FaCog />,
       image: 'https://cmtecnologias.com/wp-content/uploads/2024/04/Banner-blog-16-1.png',
@@ -39,7 +39,7 @@ const Services = () => {
     {
       id: 4,
       title: 'Instalação de SSD com Clonagem de Sistema Operacional completo',
-      price: 'Seu SDD R$ 250 | Nosso SSD R$ 500',
+      price: '(Seu SSD) R$ 250+ | (Nosso SSD) R$ 600+',
       category: 'hardware',
       icon: <FaHdd />,
       image: 'https://conteudo.imguol.com.br/c/noticias/db/2021/11/08/unidade-de-armazenamento-ssd-em-um-notebook-1636401432430_v2_615x300.jpg',
@@ -59,7 +59,7 @@ const Services = () => {
     {
       id: 6,
       title: 'Instalação de Programas Adicionais',
-      price: 'A partir de R$ 100',
+      price: 'A partir de R$ 130',
       category: 'software',
       icon: <FaShieldAlt />,
       image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&q=80',

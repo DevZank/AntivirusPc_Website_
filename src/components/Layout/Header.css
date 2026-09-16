@@ -53,8 +53,10 @@
   line-height: 1;
 }
 
-/* Navigation */
-.nav {
+/* =============================
+   DESKTOP NAVIGATION
+   ============================= */
+.nav-desktop {
   display: flex;
 }
 
@@ -91,7 +93,7 @@
   background: #dc2626;
 }
 
-/* Mobile Menu */
+/* Mobile Menu Toggle - hidden on desktop */
 .menu-toggle {
   display: none;
   background: none;
@@ -100,13 +102,25 @@
   font-size: 24px;
   cursor: pointer;
   padding: 5px;
+  z-index: 1001;
+  position: relative;
+}
+
+/* =============================
+   MOBILE NAVIGATION
+   (rendered OUTSIDE <header> to avoid stacking context issues)
+   ============================= */
+.nav-mobile {
+  display: none;
 }
 
 .menu-overlay {
   display: none;
 }
 
-/* Mobile Styles */
+/* =============================
+   MOBILE STYLES
+   ============================= */
 @media (max-width: 768px) {
   .header {
     padding: 12px 0;
@@ -125,37 +139,56 @@
     font-size: 12px;
   }
 
+  /* Hide desktop nav on mobile */
+  .nav-desktop {
+    display: none;
+  }
+
+  /* Show hamburger toggle */
   .menu-toggle {
     display: block;
   }
 
-  .nav {
+  /* Mobile nav - slides in from right, independent of header stacking context */
+  .nav-mobile {
+    display: block;
     position: fixed;
     top: 0;
     right: -100%;
     width: 280px;
     height: 100vh;
-    background: #000;
+    background: #111;
     padding: 80px 30px 30px;
     transition: right 0.3s ease;
-    z-index: 1001;
+    z-index: 9999;
+    overflow-y: auto;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5);
   }
 
-  .nav-open {
+  .nav-mobile-open {
     right: 0;
   }
 
-  .nav-list {
+  .nav-mobile .nav-list {
     flex-direction: column;
-    gap: 20px;
+    gap: 0;
   }
 
-  .nav-list a {
-    font-size: 16px;
-    padding: 15px 0;
+  .nav-mobile .nav-list a {
+    font-size: 18px;
+    padding: 18px 0;
     border-bottom: 1px solid #333;
+    display: block;
+    color: white;
+    width: 100%;
   }
 
+  .nav-mobile .nav-list a:hover,
+  .nav-mobile .nav-list a.active {
+    color: #dc2626;
+  }
+
+  /* Overlay behind mobile nav */
   .menu-overlay {
     display: block;
     position: fixed;
@@ -163,21 +196,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9998;
   }
 }
 
 @media (max-width: 480px) {
-  .contact-info {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .contact-item {
-    font-size: 12px;
-  }
-
   .logo-shield {
     width: 40px;
     height: 50px;
@@ -191,3 +215,4 @@
     font-size: 14px;
   }
 }
+

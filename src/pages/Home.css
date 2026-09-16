@@ -184,6 +184,11 @@
   line-height: 1.6;
 }
 
+.service-price-home {
+  text-align: center;
+  font-size: 1rem;
+}
+
 .services-cta {
   text-align: center;
 }
@@ -470,6 +475,10 @@
   .location-section {
     padding: 60px 0;
   }
+
+  .service-price-home {
+    font-size: 0.6rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -489,9 +498,8 @@
   .contact-card {
     padding: 30px 20px;
   }
-}
 
-.service-price-home {
-  text-align: center;
-  font-size: 0.7rem;
+  .service-price-home {
+    font-size: 0.6rem;
+  }
 }
